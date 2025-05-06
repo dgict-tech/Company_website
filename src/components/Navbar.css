@@ -1,0 +1,117 @@
+
+.navbar {
+  position: fixed;
+  top: 0;               /* Stick to the top */
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #43B76E;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+
+/* Container to center the navbar content */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  margin-right: 0.5rem;
+  height: 60px;
+}
+
+
+/* Jello keyframes */
+@keyframes jello {
+  0% {
+    transform: none;
+  }
+  30% {
+    transform: skewX(-3.1deg) skewY(-3.1deg);
+  }
+  40% {
+    transform: skewX(3.1deg) skewY(3.1deg);
+  }
+  50% {
+    transform: skewX(-3.1deg) skewY(-3.1deg);
+  }
+  65% {
+    transform: skewX(2deg) skewY(2deg);
+  }
+  75% {
+    transform: skewX(-1deg) skewY(-1deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.jello {
+  animation-name: jello;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  transform-origin: center center;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-links li {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: bold; /* Strong bold font */
+  letter-spacing: 0.5px;
+  transition: all 0.1s ease;
+}
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+
