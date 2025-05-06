@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 body {
     font-family: 'Georgia', serif; /* You can use other elegant fonts like 'Times New Roman', 'Playfair Display', etc. */
   }
