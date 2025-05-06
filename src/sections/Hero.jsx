@@ -1,14 +1,11 @@
 import React from "react";
 import hero_image from "../assets/hero_image.png";
-import dgict_logo from "../assets/dgict_logo.png";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 
 function Hero() {
   return (
     <div className="min-h-screen bg-[#42b55e] px-8 lg:px-32 py-6">
-      {/* Header */}
-      <Header />
 
       {/* Hero */}
       <section className="flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-14 py-20">
