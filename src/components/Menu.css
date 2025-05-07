@@ -294,7 +294,7 @@
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  animation: slideIn 0.3s ease forwards;
+  animation: slideIn 0.9s ease forwards;
 }
 
 @keyframes slideIn {
@@ -355,7 +355,7 @@
   left: 0;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .mobile-menu-overlay ul li a:hover::after,
