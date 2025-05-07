@@ -1,8 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
 import Hero from '../sections/Hero'
 import Services from '../sections/Services'
 import Menu from '../components/Menu'
+import Works from '../sections/Works'
+import About from '../sections/About'
+import Testimonial from '../sections/Testimonials'
+import Contact from '../sections/Contact'
+import Footer from '../components/Footer'
 
 function Home() {
   
@@ -14,6 +18,16 @@ function Home() {
       <Hero />
 
       <Services />
+
+      <Works />
+
+      <About />
+
+      <Testimonial />
+      
+      <Contact />
+
+      <Footer />
     </div>
   )
 }

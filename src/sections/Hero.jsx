@@ -1,7 +1,5 @@
 import React from "react";
 import hero_image from "../assets/hero_image.png";
-import Navbar from "../components/Navbar";
-import Header from "../components/Header";
 import { motion } from "framer-motion";
 
 function Hero() {

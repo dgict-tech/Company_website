@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div style={{ paddingTop: '80px' }}>
+      <div style={{ paddingTop: '60px' }}>
         <Home />
       </div>
     </div>

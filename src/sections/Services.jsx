@@ -63,12 +63,12 @@ const cardVariants = {
 export default function Services() {
   return (
     <div id="services" className="relative bg-black text-white py-20 px-8 md:px-28 overflow-hidden">
-      <h1 className="absolute text-[60px] md:text-[120px] font-extrabold text-white/5 top-14 md:top-3 left-1/2 -translate-x-1/2 select-none">
+      <h1 className="absolute text-[60px] md:text-[120px] font-extrabold text-white/5 top-12 md:top-3 left-1/2 -translate-x-1/2 select-none">
         SERVICES
       </h1>
 
-      <h2 className="text-4xl font-bold text-center mb-4 z-10 relative">
-        Our Services
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 z-10 relative">
+        OUR SERVICES
       </h2>
 
       <hr className="w-16 m-auto mb-16 border-2 border-[#f6ee8f]"/>
