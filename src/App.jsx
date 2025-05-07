@@ -12,13 +12,7 @@ function App() {
     <div>
       <Navbar />
       <div style={{ paddingTop: '80px' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Home />
       </div>
     </div>
   );

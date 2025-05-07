@@ -25,7 +25,7 @@ function Navbar() {
           <img src={logo} alt="Logo" className="logo jello" />
         </div>
         <ul className="nav-links">
-          <li><a href="#home">HOME</a></li>
+          <li><a href="#">HOME</a></li>
           <li><a href="#services">SERVICES</a></li>
           <li><a href="#works">WORKS</a></li>
           <li><a href="#about">ABOUT</a></li>

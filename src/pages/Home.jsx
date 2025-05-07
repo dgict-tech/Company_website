@@ -13,7 +13,7 @@ function Home() {
 
       <Hero />
 
-      {/* <Services /> */}
+      <Services />
     </div>
   )
 }
