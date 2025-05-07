@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Import for routing
 import './Navbar.css';
 import Menu from './Menu';
-
 import logo from '../assets/dgict-logo-dark.png';
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen(!menuOpen); 
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,14 +25,19 @@ function Navbar() {
           <img src={logo} alt="Logo" className="logo jello" />
         </div>
         <ul className="nav-links">
-          <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>HOME</Link></li>
-          <li><Link to="/services" className={location.pathname === '/services' ? 'active' : ''}>SERVICES</Link></li>
-          <li><Link to="/works" className={location.pathname === '/works' ? 'active' : ''}>WORKS</Link></li>
-          <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>ABOUT</Link></li>
-          <li><Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>CONTACT</Link></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
+        <div className="hamburger" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <Menu/>
+      <Menu isOpen={menuOpen} toggleMenu={toggleMenu} />
     </div>
   );
 }
