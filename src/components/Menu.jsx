@@ -1,52 +1,26 @@
-// Menu.jsx
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import './Menu.css';
 
-function Menu() {
-  const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
+function Menu({ isOpen, toggleMenu }) {
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      {/* Hamburger icon */}
-      <div className="hamburger" onClick={toggleMenu}>
-        <span />
-        <span />
-        <span />
-      </div>
-
       {/* Classy mobile menu */}
       {isOpen && (
-        <div className="mobile-menu-overlay">
+        <div className={`mobile-menu-overlay ${scrolled ? 'scrolled' : ''}`}>
           <ul>
-            <li>
-              <Link to="/" onClick={toggleMenu} className={location.pathname === '/' ? 'active' : ''}>
-                HOME
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" onClick={toggleMenu} className={location.pathname === '/services' ? 'active' : ''}>
-                SERVICES
-              </Link>
-            </li>
-            <li>
-              <Link to="/works" onClick={toggleMenu} className={location.pathname === '/works' ? 'active' : ''}>
-                WORKS
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={toggleMenu} className={location.pathname === '/about' ? 'active' : ''}>
-                ABOUT
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={toggleMenu} className={location.pathname === '/contact' ? 'active' : ''}>
-                CONTACT
-              </Link>
-            </li>
+            <li><a href="#home" onClick={toggleMenu}>HOME</a></li>
+            <li><a href="#services" onClick={toggleMenu}>SERVICES</a></li>
+            <li><a href="#works" onClick={toggleMenu}>WORKS</a></li>
+            <li><a href="#about" onClick={toggleMenu}>ABOUT</a></li>
+            <li><a href="#contact" onClick={toggleMenu}>CONTACT</a></li>
           </ul>
         </div>
       )}
