@@ -16,7 +16,7 @@ function Menu({ isOpen, toggleMenu }) {
       {isOpen && (
         <div className={`mobile-menu-overlay ${scrolled ? 'scrolled' : ''}`}>
           <ul>
-            <li><a href="#home" onClick={toggleMenu}>HOME</a></li>
+            <li><a href="#" onClick={toggleMenu}>HOME</a></li>
             <li><a href="#services" onClick={toggleMenu}>SERVICES</a></li>
             <li><a href="#works" onClick={toggleMenu}>WORKS</a></li>
             <li><a href="#about" onClick={toggleMenu}>ABOUT</a></li>
