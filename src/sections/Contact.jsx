@@ -1,8 +1,45 @@
 import { faEnvelope, faMapMarkedAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import Swal from 'sweetalert2'
 
 export default function Contact() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "f43edaad-045f-4256-a3d6-4a80da4e3c17");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Your message has been sent successfully.",
+        icon: "success"
+      });
+    }
+    setName('')
+    setEmail('')
+    setMessage('')
+  };
+
+
   return (
     <section id="contact" className="bg-[#42b55e] py-20 px-6 md:px-16 text-black">
       <motion.div
@@ -35,25 +72,36 @@ export default function Contact() {
           </ul>
         </div>
 
-        <form className="bg-white rounded-xl p-6 shadow-lg space-y-5">
+        <form
+        onSubmit={onSubmit}
+        className="bg-white rounded-xl p-6 shadow-lg space-y-5">
           <input
             type="text"
             placeholder="Your Name"
+            name="name" require
+            value={name}
+            onChange={e => setName(e.target.value)}
             className="w-full text-black p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#42b55e]"
           />
           <input
             type="email"
             placeholder="Your Email"
+            name="email" required
+            value={email}
+            onChange={e => setEmail(e.target.value)}
             className="w-full text-black p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#42b55e]"
           />
           <textarea
             placeholder="Your Message"
             rows="5"
+            name="message" required
+            value={message}
+            onChange={e => setMessage(e.target.value)}
             className="w-full text-black p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#42b55e]"
           ></textarea>
           <button
             type="submit"
-            className="bg-[#42b55e] text-black hover:bg-green-600 transition font-semibold px-6 py-3 rounded-md"
+            className="bg-[#42b55e] text-black hover:bg-green-600 transition font-semibold px-6 py-3 rounded-md cursor-pointer"
           >
             Send Message
           </button>
