@@ -36,25 +36,24 @@ function Hero() {
           </motion.h2>
           <motion.p
           variants={fadeUp}
-          className="text-white text-lg mb-6">YOU THINK IT WE BUILD IT</motion.p>
+          className="text-white text-lg mb-6">
+            YOU WANT IT, WE'LL BUILD IT!
+          </motion.p>
           <motion.p
           variants={fadeUp}
           className="text-black mb-6">
-            We specialize in the development of Crypto-Currency, Non-Fungible
-            Tokens (NFTs), Mobile applications, Website applications, Desktop
-            Applications, and Graphic Designs.
+            We specialize in building high-performance website platforms, mobile applications, website applications, desktop applications, and providing expert tech consultation tailored to your business goals.
           </motion.p>
+          <br/>
           <motion.a
           variants={fadeUp}
             href="#contact"
-            className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition"
+            className="bg-black text-white px-[60px] py-4 rounded-full font-semibold hover:bg-gray-800 transition"
           >
             Contact Us
           </motion.a>
         </motion.div>
         <motion.div
-        animate={{ scale: [1, 1.2, 1], opacity: [0.75, 0.9, 0.75] }}
-        transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
         className="w-full md:w-1/2 mb-10 md:mb-0">
           <img
             src={hero_image}

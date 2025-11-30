@@ -20,27 +20,36 @@ export default function About() {
           />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="space-y-4"
-        >
-          <h2 className="text-4xl font-bold text-[#42b55e] mb-6">ABOUT US</h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-          We specialize in development of Mobile applications, Website applications, Desktop Applications, Crypto-Currencies, and Blockchain Technology-driven Systems.
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-          We speed up our development process to meet up with your plans while creating a secured platform that is reliable for your operations.
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-          We love to make it simple, no matter how complex your ideas or business procedures are. We create a practical, easy, and seamless design flow with a sound user experience to get the best application for your businesses and ideas.
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-          As a company, we are passionate about innovation and creativity. We love solving world problems even if it requires teaming up and connecting with other developers to make the development faster, more secure, and more powerful.
-          </p>
-        </motion.div>
+      <motion.div
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="space-y-4"
+>
+  <h2 className="text-4xl font-bold text-[#42b55e] mb-6">ABOUT US</h2>
+
+  <p className="text-gray-700 text-lg leading-relaxed">
+    At DGICT, we accelerate our development process to align perfectly with your goals—delivering
+    high-performance applications while ensuring every platform we build is secure, scalable, and
+    reliable for your daily operations.
+  </p>
+
+  <p className="text-gray-700 text-lg leading-relaxed">
+    We believe in making technology simple, no matter how complex your ideas or business workflows
+    may be. Our team focuses on creating practical, intuitive, and seamless design flows paired with
+    strong user experience principles, ensuring you get the best applications built for your business
+    processes and digital vision.
+  </p>
+
+  <p className="text-gray-700 text-lg leading-relaxed">
+    Innovation drives us. We are passionate about solving real-world problems through technology—
+    and when necessary, we collaborate with expert developers and partner teams to deliver solutions
+    that are faster, more secure, and more powerful. At DGICT, we turn ideas into reliable, impactful
+    digital products built for the future.
+  </p>
+</motion.div>
+
       </div>
     </section>
   );
