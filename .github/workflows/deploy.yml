@@ -40,4 +40,4 @@ jobs:
       - name: Upload to server
         run: |
           scp -r -P ${{ secrets.SSH_PORT }} ./dist/* \
-          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/htdocs/koncms.com
+          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/htdocs/dgict.co
