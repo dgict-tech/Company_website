@@ -1,5 +1,3 @@
-"use client"
-
 import { motion } from "framer-motion"
 import { Blocks, Smartphone, Globe, Monitor, Brush, LayoutTemplate } from "lucide-react"
 
@@ -54,8 +52,9 @@ const cardVariants = {
 
 export default function Services() {
   return (
-    <div id="services" className="lg:bg-gradient-to-br lg:from-black lg:via-[#1a1a1a] lg:to-black pt-28 pb-20 md:pb-32 min-h-screen flex items-center relative bg-black text-white py-20 px-6 md:px-16 overflow-hidden">
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#42b55e]/15 rounded-full blur-3xl -z-10"></div>
+    <div id="services" className="lg:bg-gradient-to-br lg:from-black lg:via-[#1a1a1a] lg:to-black pt-28 pb-20 md:pb-32 min-h-screen flex items-center relative bg-gray-950 text-white py-20 px-6 md:px-16 overflow-hidden">
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[rgba(66,181,94,0.15)]
+ rounded-full blur-3xl -z-10"></div>
 
       <h1 className="hidden md:inline-block absolute text-[60px] md:text-[120px] font-extrabold text-white/5 top-12 md:top-12 left-1/2 -translate-x-1/2 select-none">
         SERVICES
