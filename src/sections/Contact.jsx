@@ -144,7 +144,7 @@ export default function Contact() {
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-[#42b55e] to-[#3a9a4d] text-white hover:to-[#2d7a3b] transition font-semibold px-6 py-3 rounded-lg cursor-pointer flex items-center justify-center gap-2 group"
+              className="w-full lg:bg-gradient-to-r lg:from-[#42b55e] lg:to-[#3a9a4d] text-white hover:to-[#2d7a3b] bg-[#42b55e] transition font-semibold px-6 py-3 rounded-lg cursor-pointer flex items-center justify-center gap-2 group"
             >
               Send Message
               <Send size={18} className="group-hover:translate-x-1 transition-transform" />

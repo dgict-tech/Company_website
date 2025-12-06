@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
 import logo from '../assets/dgict-logo-dark.png'; // Adjust path if needed
+import dgict from '../assets/dgict-logo.png'
 
 function Menu({ isOpen, toggleMenu }) {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +17,7 @@ function Menu({ isOpen, toggleMenu }) {
       {isOpen && (
         <div className={`mobile-side-menu ${scrolled ? 'scrolled' : ''}`}>
           <div className="menu-header">
-            <img src={logo} alt="Logo" className="menu-logo" />
+            <img src={dgict} alt="Logo" className="menu-logo" />
             <button className="menu-close" onClick={toggleMenu}>×</button>
           </div>
           <ul className="menu-links">

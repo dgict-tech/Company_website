@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect, useState } from "react"
 import "./Navbar.css"
 import Menu from "./Menu"

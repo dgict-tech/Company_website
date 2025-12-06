@@ -81,7 +81,7 @@ export default function About() {
 
           <a
             href="#contact"
-            className="inline-block bg-gradient-to-r from-[#42b55e] to-[#3a9a4d] text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-[#42b55e]/50 transition-all duration-300 mt-6"
+            className="inline-block lg:bg-gradient-to-r lg:from-[#42b55e] lg:to-[#3a9a4d] bg-[#42b55e] text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-[#42b55e]/50 transition-all duration-300 mt-6"
           >
             Get Started Today
           </a>
