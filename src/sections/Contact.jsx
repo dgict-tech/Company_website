@@ -59,16 +59,15 @@ export default function Contact() {
           </p>
           <ul className="space-y-4 text-black/90">
             <li className="flex items-center gap-3">
-              <FontAwesomeIcon icon={faEnvelope} className="text-black text-xl" />
+              <Mail className="text-black w-5 h-5" />
               <span>dgictech@gmail.com</span>
             </li>
             <li className="flex items-center gap-3">
-            <FontAwesomeIcon icon={faPhone} className="text-black text-xl" />
+            <Phone className="text-black w-5 h-5" />
               <span>+234 902 6752 559</span>
             </li>
             <li className="flex items-center gap-3">
-            <FontAwesomeIcon icon={faMapMarkedAlt} className="text-black text-xl" />
-            
+            <MapPin className="text-black w-5 h-5" />
               <span> Plot 50 Joseph Uzor Lane, Nnaaki FLT 2, Kubwa, Abuja, Nigeria</span>
             </li>
           </ul>
