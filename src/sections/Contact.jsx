@@ -72,7 +72,7 @@ export default function Contact() {
               <span> Plot 50 Joseph Uzor Lane, Nnaaki FLT 2, Kubwa, Abuja, Nigeria</span>
             </li>
           </ul>
-        </div>
+       </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div
