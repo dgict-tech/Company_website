@@ -67,7 +67,8 @@ export default function Contact() {
             </li>
             <li className="flex items-center gap-3">
             <FontAwesomeIcon icon={faMapMarkedAlt} className="text-black text-xl" />
-              <span>Abuja, Nigeria</span>
+            
+              <span> Plot 50 Joseph Uzor Lane, Nnaaki FLT 2, Kubwa, Abuja, Nigeria</span>
             </li>
           </ul>
         </div>
