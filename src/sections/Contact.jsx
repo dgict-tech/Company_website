@@ -115,7 +115,7 @@ export default function Contact() {
                 <MapPin className="text-[#42b55e] flex-shrink-0 w-6 h-6 mt-1" />
                 <div>
                   <h3 className="font-semibold mb-1">Location</h3>
-                  <p className="text-gray-300">Abuja, Nigeria</p>
+                  <p className="text-gray-300"> Plot 50 Joseph Uzor Lane, Nnaaki FLT 2, Kubwa,  Abuja, Nigeria</p>
                 </div>
               </motion.div>
             </div>
