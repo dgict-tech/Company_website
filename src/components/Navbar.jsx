@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import "./Navbar.css"
 import Menu from "./Menu"
 import logo from "../assets/dgict-logo-dark.png"
@@ -27,24 +28,27 @@ function Navbar() {
         </div>
         <ul className="nav-links">
           <li>
-            <a href="#home">HOME</a>
+            <Link to="/#home">HOME</Link>
           </li>
           <li>
-            <a href="#services">SERVICES</a>
+            <Link to="/#services">SERVICES</Link>
           </li>
           <li>
-            <a href="#works">WORKS</a>
+            <Link to="/#works">WORKS</Link>
           </li>
           <li>
-            <a href="#about">ABOUT</a>
+            <Link to="/#about">ABOUT</Link>
           </li>
           <li>
-            <a href="#contact">CONTACT</a>
+            <Link to="/#contact">CONTACT</Link>
+          </li>
+          <li>
+            <Link to="/servicerequest">SERVICE REQUEST</Link>
           </li>
         </ul>
-        <a href="#contact" className="cta-button">
+        <Link to="/servicerequest" className="cta-button">
           GET STARTED
-        </a>
+        </Link>
         <div className="hamburger" onClick={toggleMenu}>
           {menuOpen ? <X size={24} /> : <MenuIcon size={24} />}
         </div>
