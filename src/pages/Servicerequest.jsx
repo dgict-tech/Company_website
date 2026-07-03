@@ -10,7 +10,7 @@ const PRICING = {
     icon: Globe,
     options: [
       { id: "net", label: ".net", price: 18000 },
-      { id: "ng", label: ".ng", price: 40000 },
+      { id: "com", label: ".com", price: 24000 }
     ],
   },
   email: {
