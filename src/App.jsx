@@ -8,14 +8,18 @@ import About from './sections/About';
 import Contact from './sections/Contact';
 import WhatsAppChat from './components/WhatsAppChat';
 import ScrollToTop from './components/ScrollToTop';
+import ServiceRequest from './pages/Servicerequest';
 
 function App() {
   return (
     <div>
       <Navbar />
       <div style={{ paddingTop: '60px' }}>
-        <Home />
-      </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/servicerequest" element={<ServiceRequest />} />
+        </Routes>
+        </div>
       <WhatsAppChat />
       <ScrollToTop />
     </div>
