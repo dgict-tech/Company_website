@@ -42,7 +42,7 @@ function Navbar() {
           <li>
             <Link to="/#contact">CONTACT</Link>
           </li>
-          <li>
+          <li className="whitespace-nowrap">
             <Link to="/servicerequest">SERVICE REQUEST</Link>
           </li>
         </ul>
